@@ -75,6 +75,8 @@ class Keys(str, Enum):
     ControlSquareClose = "c-]"
     ControlCircumflex = "c-^"
     ControlUnderscore = "c-_"
+
+    Backspace = "backspace"
     ControlBackspace = "c-backspace"
     ShiftBackspace = "s-backspace"
     ControlShiftBackspace = "c-s-backspace"
@@ -195,7 +197,6 @@ class Keys(str, Enum):
     ControlSpace = ControlAt
     Tab = ControlI
     Enter = ControlM
-    Backspace = ControlH
 
     # ShiftControl was renamed to ControlShift in
     # 888fcb6fa4efea0de8333177e1bbc792f3ff3c24 (20 Feb 2020).
@@ -210,7 +211,6 @@ ALL_KEYS: List[str] = [k.value for k in Keys]
 
 # Aliases.
 KEY_ALIASES: Dict[str, str] = {
-    "backspace": "c-h",
     "c-space": "c-@",
     "enter": "c-m",
     "tab": "c-i",
